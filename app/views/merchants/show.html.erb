@@ -1,0 +1,9 @@
+<h2><%= @merchant.name %></h2>
+
+<p> Address: <%= @merchant.address %></p>
+<p> City: <%= @merchant.city %></p>
+<p> State: <%= @merchant.state %></p>
+<p> Zip: <%= @merchant.zip %></p>
+
+<%= link_to 'Update merchant', "/merchants/#{@merchant.id}/edit" %><br>
+<%= link_to 'Delete merchant', "/merchants/#{@merchant.id}", method: :delete %>
